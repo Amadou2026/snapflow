@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.bg-red-800{
+  background-color: rgb(247, 64, 64);
+}
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color:darkgray;
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.h-screen {
+    height: auto;
+}
+.warning{
+  background-color: rgb(180, 180, 32);
+}
+
+.px-36 {
+  padding-inline: calc(var(--spacing) * 36);
+}
+
+@import "tailwindcss";
+
+/* Styles globaux */
+body {
+  @apply font-sans text-gray-900;
+
+}
+
+/* Styles pour le layout principal */
+.main-container {
+  @apply min-h-screen bg-gray-100;
+}
+
+/* Styles pour le tableau de bord */
+.dashboard-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8;
+}
+
+/* Styles pour les cartes */
+.card {
+  @apply bg-white overflow-hidden shadow rounded-lg;
+}
+
+.card-header {
+  @apply px-4 py-5 sm:px-6 border-b border-gray-200;
+}
+
+.card-title {
+  @apply text-lg font-medium text-gray-900;
+}
+
+/* Styles pour les tables */
+.data-table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.data-table thead {
+  @apply bg-gray-50;
+}
+
+.data-table th {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.data-table tbody {
+  @apply bg-white divide-y divide-gray-200;
+}
+
+.data-table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm;
+}
+
+/* Badges */
+.badge {
+  @apply px-2 inline-flex text-xs leading-5 font-semibold rounded-full;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-error {
+  @apply bg-red-100 text-red-800;
+}
+
+/* Boutons */
+.btn {
+  @apply inline-flex items-center px-4 py-2 border rounded-md shadow-sm text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-500;
+}
+
+.btn-secondary {
+  @apply bg-white text-indigo-600 border-indigo-600 hover:bg-indigo-50 focus:ring-indigo-500;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+}
+
+/* Spinner */
+.loading-spinner {
+  @apply animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-500;
+}
+
+/* Styles pour la page de login */
+.login-container {
+  @apply min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8;
+}
+
+.login-card {
+  @apply w-full; /* ✅ pleine largeur */
+}
+
+.login-error {
+  @apply flex items-center p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg;
+}
+
+.form-input {
+  @apply appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+}
+.bg-blue-600{
+  background-color: cornflowerblue;
+}

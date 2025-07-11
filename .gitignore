@@ -1,0 +1,20 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+*.pyc
+.env/
+
+# === Django ===
+db.sqlite3
+/static/
+media/
+
+# === React ===
+node_modules/
+build/
+dist/
+
+
